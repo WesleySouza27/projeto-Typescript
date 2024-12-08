@@ -8,6 +8,7 @@ let carteira: carteira = {
 
 
 function atualizarSaldo(carteira: carteira): void {
+
     if (carteira.entrada) {
         carteira.saldo += carteira.entrada
         console.log(`entrada adicionada ${carteira.entrada}, saldo atual: ${carteira.saldo}`)
@@ -20,6 +21,10 @@ function atualizarSaldo(carteira: carteira): void {
         } else {
             console.log(`Saida de ${carteira.saida} negada! saldo insuficiente!  saldo atual: ${carteira.saldo}`)
         }
+    }
+
+    if (!carteira.entrada && !carteira.saida) {
+        console.log(`Saldo atual ${carteira.saldo}`)
     }
 
 }
