@@ -22,7 +22,7 @@ export type produto = {
 export type User = {
     nome: string
     idade: number
-    ocupacao?: string
+    ocupacao: string
     salario?: number
 }
 

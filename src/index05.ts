@@ -1,8 +1,8 @@
 import { User } from './tipos'
 
 function informacoesUser({ nome, idade, ocupacao, salario}: User): void {
-    if (nome && idade) {
-        console.log(`${nome}, ${idade} anos, ${ocupacao ? ocupacao : 'N/A'}, ${salario ? salario : 'N/A'}`)
+    if (nome && idade && ocupacao) {
+        console.log(`${nome}, ${idade} anos, ${ocupacao}, ${salario ? salario : 'N/A'}`)
     } else {
         console.log('nome e idade são obrigatórios')
     }
@@ -11,6 +11,7 @@ function informacoesUser({ nome, idade, ocupacao, salario}: User): void {
 const usuario: User = {
     nome: 'wesley',
     idade: 26,
+    ocupacao: 'Programador'
 }
 
 const usuario02: User = {

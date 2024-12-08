@@ -12,6 +12,7 @@ const usuario03: User = {
 const usuario04: User = {
     nome: 'maria',
     idade: 24,
+    ocupacao: 'empresária'
 }
 
 const funcionario01: diretor = {
