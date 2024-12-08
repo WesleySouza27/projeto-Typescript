@@ -5,7 +5,7 @@
   "scripts": {
   "build": "tsc",
   "start": "node dist/index.js",
-  "dev": "ts-node-dev --respawn --transpile-only src/index07.ts"
+  "dev": "ts-node-dev --respawn --transpile-only src/index02.ts"
     
   },
   "keywords": [],

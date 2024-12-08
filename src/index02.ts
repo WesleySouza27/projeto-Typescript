@@ -20,7 +20,7 @@ function calcularMediaPonderada(lista: NotaPeso[]): number {
         somaPeso += item.peso 
     }
 
-    return Notas / somaPeso
+    return parseFloat((Notas / somaPeso).toFixed(2))
 }
 
 
@@ -28,4 +28,4 @@ const resultado1 = calcularMediaPonderada(notas1)
 console.log(`Média ponderada 1: ${resultado1}`)
 
 const resultado2 = calcularMediaPonderada(notas2)
-console.log(`Média ponderada 2: ${resultado2.toFixed(0)}`)
+console.log(`Média ponderada 2: ${resultado2}`)
